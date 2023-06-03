@@ -1,0 +1,203 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v25-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-italic - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v25-cyrillic_latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v25-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v25-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v25-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+body{
+	background-image: url("../img/fon.svg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+
+.header{
+	margin-top:76px;
+	margin-left:600px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	
+	color: #1F3265;
+}
+
+.text{
+	margin-top:50px;
+	margin-left:400px;
+	
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	
+	color: #3D5696;
+}
+
+.avatarka{
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	left: 1200px;
+	top: 30px;
+}
+
+.settings{
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	left: 1138px;
+	top: 44px;
+}
+
+.setting_button:hover, .setting_button:focus, .setting_button:active{
+	opacity:.75;
+}
+
+.wrap{
+	display:flex;
+	flex-wrap:wrap;
+	width:400px;
+	margin-left:400px;
+	margin-top:10px;
+}
+
+.ok_btn{
+	margin-top:50px;
+	width: 127px;
+	height: 34px;
+	
+	background: #225FBC;
+	border:none;
+	color:#FFFFFF;
+	border-radius: 15px;
+}
+
+.ok_btn:hover, .ok_btn:focus, .ok_btn:active{
+		background: #2D92CB;
+}
+
+.subject{
+	margin-top:20px;
+	margin-left:15px;
+	margin-right:10px;
+	width:115px;
+	height: 30px;
+	
+	color:#225FBC;
+	background: #FFFFFF;
+	border: 1px solid #68769A;
+	border-radius: 10px;
+}
+
+.input_style{
+	margin-left:15px;
+	margin-top:20px;
+	width: 60px;
+	height: 30px;
+	
+	color:#225FBC;
+	background: #FFFFFF;
+	border: 1px solid #68769A;
+	border-radius: 10px;
+	
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#225FBC;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:#225FBC;
+ 
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #225FBC;
+   
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:  #225FBC;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #225FBC;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #225FBC;
+}
+
+.label_inp{
+	margin-top:23px;
+	
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	margin-right:10px;
+	
+	color: #3D5696;
+}
+
+.score{
+	margin-top:23px;
+	margin-left:20px;
+	
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	margin-right:10px;
+	
+	color: #3D5696;
+}
+
+
+
+
+
+
+
+
+
+
+
