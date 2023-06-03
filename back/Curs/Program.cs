@@ -17,6 +17,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IAuthorizationService, AuthorizationService>();
+//builder.Services.AddCors();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options
     => options.UseNpgsql("Host=localhost; Port=5432; Database=curs;Username=postgres;Password=7"));
@@ -50,17 +51,18 @@ builder.Services.AddAuthorization(options =>
 
 var app = builder.Build();
 
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
 app.MapControllers();
 

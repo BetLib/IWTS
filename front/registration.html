@@ -6,6 +6,8 @@
 	<title>IWTS_reg</title>
 	<link rel="stylesheet" href="./css/reg_cs.css">
 	<link rel="stylesheet" href="./css/reset.css">
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="scripts/registration.js"></script>
 </head>
 
 <body>
@@ -18,16 +20,12 @@
 	
 	<div class="wrap">
 		<label for="login" class="input_label">Логин:</label>
-		<input type="text" class="input_style login" placeholder="Введите логин" id="login">
+		<input type="text" required class="input_style login" placeholder="Введите логин" id="login">
 		
 		<label for="password"  class="input_label">Пароль:</label>
-		<input type="text" class="input_style" placeholder="Введите пароль" id="password">
+		<input type="password" required class="input_style" placeholder="Введите пароль" id="password">
 		
-		<form action="index.html" target="_blank">
-			<button class="back_btn">Вернуться</button>
-		</form>
+		<button id="submit" class="back_btn" type="button">Готово</button>
 	</div>
-	
-	
 </body>
 </html>
